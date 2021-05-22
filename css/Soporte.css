@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif; 
+}
+
+header
+{
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 100px; 
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .logo
+{
+position: relative;
+max-width: 80px;
+}
+
+header ul2
+{
+position: relative;
+display: flex;
+}
+
+header ul2 li2
+{
+list-style: none;
+}
+
+header ul2 li2 a
+{
+display: inline-block;
+color: #333;
+font-weight: 600;
+margin-left: 40px;
+text-decoration: none;
+}
+
+header ul2 li2 a:hover
+{
+color: #137e86;
+}
+
+.sci
+{
+position: absolute;
+top: 50%;
+right: 30px;
+transform: translateY(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.sci li
+{
+list-style: none;
+}
+
+.sci li a
+{
+display: inline-block;
+margin: 5px 0;
+transform: scale(0.6);
+}
+
+.clientenuevo 
+{
+margin-left: 50px;
+margin-top: 40px;
+letter-spacing: 1px;
+}
+
+.clientenuevo a
+{
+display: inline-block;
+margin-top: 10px;
+padding: 8px 20px;
+background: #137e86;
+color: #fff;
+border-radius: 40px;
+text-decoration: none;
+}
+
+.clientenuevo p
+{
+text-decoration: none;
+font-weight: 500;
+}
+
+.clientenuevo a:hover
+{
+animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+	0% {
+		
+		transform: scale(1,1);
+	}
+	50% {
+		
+		transform: scale(1.1,1.1);
+	}
+	100% {
+		
+		transform: scale(1,1);
+	}
+
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(10px);
+	}
+	50% {
+		
+		transform: translatey(-1px);
+	}
+	100% {
+		
+		transform: translatey(10px);
+	}
+}
+
+.logo
+{
+transform: translatey(0px);
+animation: float 3.5s ease-in-out infinite;
+}
+
+@media (max-width: 375px)
+{
+
+header
+{
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 5px; 
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header ul2 li2 a
+{
+display: inline-block;
+color: #333;
+font-weight: 600;
+margin-left: 5px;
+text-decoration: none;
+}
+
+.sci
+{
+display: none
+}
+
+.clientenuevo 
+{
+margin-left: 10px;
+margin-top: 40px;
+letter-spacing: 1px;
+}
+
+}
